@@ -22,6 +22,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //圖片圓角
+        personImage.clipsToBounds = true
+        personImage.layer.cornerRadius = personImage.frame.width / 2
+        
         self.updateUser()
     }
 
